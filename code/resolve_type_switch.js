@@ -1,4 +1,4 @@
-const myType = (value) => {
+const getType = (value) => {
   const type = Object.prototype.toString.call(value)
   
   switch (type) {
@@ -16,24 +16,13 @@ const myType = (value) => {
   }
 }
 
-let undef
-let string = 'foo bar';
-let number = 100;
-let boolean = true;
-let array = [];
-let map = new Map()
-let set = new Set()
-let symbol = Symbol()
-let object = {}
-let func = () => 'function'
-
-console.log(`undefined: ${myType(undef)}`)
-console.log(`string: ${myType(string)}`)
-console.log(`number: ${myType(number)}`)
-console.log(`boolean: ${myType(boolean)}`)
-console.log(`array: ${myType(array)}`)
-console.log(`map: ${myType(map)}`)
-console.log(`set: ${myType(set)}`)
-console.log(`symbol: ${myType(symbol)}`)
-console.log(`object: ${myType(object)}`)
-console.log(`function: ${myType(func)}`)
+console.log(`undefined: ${getType(undefined)}`)
+console.log(`string: ${getType('foo bar')}`)
+console.log(`number: ${getType(100)}`)
+console.log(`boolean: ${getType(true)}`)
+console.log(`array: ${getType([])}`)
+console.log(`map: ${getType(new Map())}`)
+console.log(`set: ${getType(new Set())}`)
+console.log(`symbol: ${getType(Symbol())}`)
+console.log(`object: ${getType({})}`)
+console.log(`function: ${getType(() => 'function')}`)
