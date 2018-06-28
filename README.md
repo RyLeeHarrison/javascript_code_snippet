@@ -1,1 +1,1 @@
-# javascript_code_snippet
+# Javascript Code Snippet
