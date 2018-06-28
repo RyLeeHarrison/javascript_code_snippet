@@ -1,4 +1,4 @@
-const dummyObject = require('./dummy_data/dummyObject')
+const dummyObject = require('../dummy_data/dummyObject')
 
 function forEachKeys(obj) {
   Object.keys(obj)

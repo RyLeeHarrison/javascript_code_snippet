@@ -1,4 +1,4 @@
-const dummyMap = require('./dummy_data/dummyMap')
+const dummyMap = require('../dummy_data/dummyMap')
 
 function forEachGet(map) {
   const lookup = (key) => map.get(key)
