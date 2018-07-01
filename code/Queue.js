@@ -7,6 +7,7 @@ class Queue {
     pop() { 
         const value = this.queue[0];
         this.queue.splice(0, 1);
+        
         return value;
     }
 }
