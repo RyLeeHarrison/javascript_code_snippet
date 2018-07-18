@@ -43,7 +43,7 @@ class HeapSort {
                 i_big = c1;
             if (c2 < max && this.arr[c2] > this.arr[i_big])
                 i_big = c2;
-            if (i_big == i) return;
+            if (i_big === i) return;
             this.swap(i, i_big);
             i = i_big;
         }

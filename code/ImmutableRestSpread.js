@@ -12,6 +12,7 @@ class ImmutableRestSpread {
         const { [key]: value } = this.init;
         return value;
     }
+    
     omit(key) { // rest
         const { [key]: del, ...omitted } = this.init;
         return omitted;
