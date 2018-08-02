@@ -1,0 +1,36 @@
+[{
+    "username": "tcollacombe0",
+    "first_name": "Tilda",
+    "last_name": "Collacombe",
+    "email": "tcollacombe0@epa.gov",
+    "active": false,
+    "favorite_number": 98
+}, {
+    "username": "shandmore1",
+    "first_name": "Sherm",
+    "last_name": "Handmore",
+    "email": "shandmore1@businessinsider.com",
+    "active": false,
+    "favorite_number": 56
+}, {
+    "username": "vforri2",
+    "first_name": "Vinita",
+    "last_name": "Forri",
+    "email": "vforri2@opensource.org",
+    "active": true,
+    "favorite_number": 31
+}, {
+    "username": "ascourfield3",
+    "first_name": "Annie",
+    "last_name": "Scourfield",
+    "email": "ascourfield3@github.io",
+    "active": true,
+    "favorite_number": 73
+}, {
+    "username": "zmcimmie4",
+    "first_name": "Zondra",
+    "last_name": "Mcimmie",
+    "email": "zmcimmie4@google.co.uk",
+    "active": false,
+    "favorite_number": 50
+}]

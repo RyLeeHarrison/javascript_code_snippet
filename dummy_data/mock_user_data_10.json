@@ -1,0 +1,71 @@
+[{
+    "username": "fmanderson0",
+    "first_name": "Fanni",
+    "last_name": "Manderson",
+    "email": "fmanderson0@gizmodo.com",
+    "active": false,
+    "favorite_number": 75
+}, {
+    "username": "avenney1",
+    "first_name": "Anet",
+    "last_name": "Venney",
+    "email": "avenney1@skype.com",
+    "active": true,
+    "favorite_number": 44
+}, {
+    "username": "raleavy2",
+    "first_name": "Reagan",
+    "last_name": "Aleavy",
+    "email": "raleavy2@umn.edu",
+    "active": false,
+    "favorite_number": 59
+}, {
+    "username": "kmcdonald3",
+    "first_name": "Kaitlyn",
+    "last_name": "McDonald",
+    "email": "kmcdonald3@macromedia.com",
+    "active": false,
+    "favorite_number": 31
+}, {
+    "username": "elowthorpe4",
+    "first_name": "Evania",
+    "last_name": "Lowthorpe",
+    "email": "elowthorpe4@slideshare.net",
+    "active": false,
+    "favorite_number": 54
+}, {
+    "username": "dtregonna5",
+    "first_name": "Demetre",
+    "last_name": "Tregonna",
+    "email": "dtregonna5@sfgate.com",
+    "active": true,
+    "favorite_number": 78
+}, {
+    "username": "nmeffin6",
+    "first_name": "Nataline",
+    "last_name": "Meffin",
+    "email": "nmeffin6@shareasale.com",
+    "active": false,
+    "favorite_number": 66
+}, {
+    "username": "cnoades7",
+    "first_name": "Carolyn",
+    "last_name": "Noades",
+    "email": "cnoades7@joomla.org",
+    "active": false,
+    "favorite_number": 2
+}, {
+    "username": "nashby8",
+    "first_name": "Normy",
+    "last_name": "Ashby",
+    "email": "nashby8@163.com",
+    "active": true,
+    "favorite_number": 96
+}, {
+    "username": "lsteadman9",
+    "first_name": "Lucienne",
+    "last_name": "Steadman",
+    "email": "lsteadman9@virginia.edu",
+    "active": false,
+    "favorite_number": 30
+}]

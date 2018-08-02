@@ -12,4 +12,4 @@ const emptyFunction = {
 }
 
 // export default
-module.exports =emptyFunction;
+module.exports = emptyFunction;
