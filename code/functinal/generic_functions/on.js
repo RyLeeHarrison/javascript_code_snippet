@@ -1,0 +1,1 @@
+const on = (f, g) => (a, b) => f(g(a), g(b));

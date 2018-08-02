@@ -21,15 +21,18 @@ const decodeMTF = numList => {
     }, init).word;
 };
 
-//test our algorithms
-const words = ['broood', 'bananaaa', 'hiphophiphop'];
+const words = ['marshmallow', 'chocolate', 'toffee'];
 
 const encoded = words.map(encodeMTF);
 const decoded = encoded.map(decodeMTF);
 
-//print results
-console.log("from encoded:");
-console.log(encoded);
+console.log( // ==> 
+             // [ [ 12, 1, 17, 18, 10, 4, 4, 14, 0, 16, 22 ],
+             // [ 2, 7, 14, 2, 1, 12, 4, 19, 8 ],
+             // [ 19, 15, 7, 0, 7, 0 ] ]  
+    encoded
+);
 
-console.log("from decoded:");
-console.log(decoded);
+console.log( // ==> [ 'marshmallow', 'chocolate', 'toffee' ]
+    decoded
+);

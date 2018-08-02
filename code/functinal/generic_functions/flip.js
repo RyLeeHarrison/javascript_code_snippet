@@ -1,0 +1,1 @@
+const flip = f  => (a, b) => f.apply(null, [b, a]);

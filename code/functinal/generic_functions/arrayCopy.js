@@ -1,0 +1,1 @@
+const arrayCopy = xs => xs.slice(0);

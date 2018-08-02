@@ -1,0 +1,1 @@
+const show = x => JSON.stringify(x, null, 2);

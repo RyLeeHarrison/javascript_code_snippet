@@ -96,5 +96,26 @@ function cfft(amplitudes)
 	return amplitudes;
 }
 
-console.log(cfft([1,1,1,1,0,0,0,0]))
-console.log(icfft(cfft([1,1,1,1,0,0,0,0])))
+console.log( // ==> [ Complex { re: 4, im: 0 },
+				//	  Complex { re: 1, im: -2.414213562373095 },
+				//	  Complex { re: 0, im: 0 },
+				//	  Complex { re: 1, im: -0.4142135623730949 },
+				//	  Complex { re: 0, im: 0 },
+				//	  Complex { re: 0.9999999999999999, im: 0.4142135623730949 },
+				//	  Complex { re: 0, im: 0 },
+				//	  Complex { re: 0.9999999999999997, im: 2.414213562373095 } ]
+	cfft([1,1,1,1,0,0,0,0])
+);
+
+
+console.log( // ==>	[ Complex { re: 1, im: -0 },
+				//	  Complex { re: 1, im: -5.551115123125783e-17 },
+				//	  Complex { re: 1, im: 2.4894981252573997e-17 },
+				//	  Complex { re: 1, im: -5.551115123125783e-17 },
+				//	  Complex { re: 5.551115123125783e-17, im: -0 },
+				//	  Complex { re: 5.551115123125783e-17, im: 5.551115123125783e-17 },
+				//	  Complex { re: 0, im: -2.4894981252573997e-17 },
+				//	  Complex { re: 5.551115123125783e-17, im: 5.551115123125783e-17 } ]
+				
+	icfft(cfft([1,1,1,1,0,0,0,0]))
+);
