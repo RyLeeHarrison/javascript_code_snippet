@@ -4,10 +4,10 @@
 // newly supplied arguments, if gaps remain.
 // curry :: ((a, b) -> c) -> a -> b -> c
 const curry = (f, ...args) => {
-    const go = xs => xs.length >= f.length ? (
-        f.apply(null, xs)
-    ) : function() {
-        return go(xs.concat(Array.from(arguments)));
-    };
-    return go(args);
+  const go = xs => xs.length >= f.length ? (
+    f.apply(null, xs)
+  ) : function() {
+    return go(xs.concat(Array.from(arguments)));
+  };
+  return go(args);
 };

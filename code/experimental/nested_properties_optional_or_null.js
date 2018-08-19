@@ -7,8 +7,6 @@ const top = {
 	}
 }
 
-if ({ ...{ ...top
-		}.a
-	}.b) {
+if ({...{...top}.a}.b) {
 	console.log(`satisfied: ${({...{...top}.a}).b}`)
 }

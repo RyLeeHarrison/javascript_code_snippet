@@ -10,7 +10,7 @@ class FormatDate extends Date {
 
     const months = [
       'Jan', 'Feb', 'Mar', 'Apr', 'May',
-			'Jun', 'Jul', 'Aug', 'Sep', 'Oct',
+      'Jun', 'Jul', 'Aug', 'Sep', 'Oct',
       'Nov', 'Dec'];
 
     return `${days[this.getDay()]}, ${months[this.getMonth()]} ${this.getDate()} ${this.getFullYear()}`;
@@ -18,5 +18,5 @@ class FormatDate extends Date {
 }
 
 console.log( // => Sunday, Aug 11 2018
-  new FormatDate(new Date()).getFormattedDate()
+    new FormatDate(new Date()).getFormattedDate()
 );

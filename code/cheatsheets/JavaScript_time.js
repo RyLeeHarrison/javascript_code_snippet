@@ -2,7 +2,7 @@
 
 // # Time Values and Time Range
 // A Date object contains a Number indicating a particular instant in time to within a millisecond.
-// Such a Number is called a time value. A time value may also be NaN, indicating that the Date 
+// Such a Number is called a time value. A time value may also be NaN, indicating that the Date
 // object does not represent a specific instant of time.
 // Time is measured in ECMAScript in milliseconds since 01 January, 1970 UTC. In time values leap seconds are ignored.
 // It is assumed that there are exactly 86,400,000 milliseconds per day. ECMAScript Number values can represent all integers
@@ -15,16 +15,11 @@
 
 const msPerDay = 86400000;
 
-const DayFromYear  = (y) => (
-    365 * (            y - 1970 )
-        - Math.floor(( y - 1901 ) / 100 )
-        + Math.floor(( y - 1601 ) / 400 )
-        + Math.floor(( y - 1969 ) / 4   )
-)
+const DayFromYear = y => 365 * (y - 1970) - Math.floor((y - 1901) / 100) + Math.floor((y - 1601) / 400) + Math.floor((y - 1969) / 4);
 
-const TimeFromYear = (y)    => msPerDay * DayFromYear(y)
+const TimeFromYear = y => msPerDay * DayFromYear(y);
 
 console.log(
     DayFromYear(4322),
     TimeFromYear(1993)
-)
+);

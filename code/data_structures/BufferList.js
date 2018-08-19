@@ -71,4 +71,4 @@ module.exports = class BufferList {
     }
     return ret;
   }
-}
+};

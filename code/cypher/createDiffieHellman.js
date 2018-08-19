@@ -12,8 +12,7 @@ const bobKey = bob.generateKeys();
 const aliceSecret = alice.computeSecret(bobKey);
 const bobSecret = bob.computeSecret(aliceKey);
 
-// OK
-console.log(
-	aliceSecret.toString('hex'),
-	bobSecret.toString('hex')
+console.log( // OK
+    aliceSecret.toString('hex'),
+    bobSecret.toString('hex')
 );

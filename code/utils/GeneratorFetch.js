@@ -7,14 +7,14 @@ class FetchGenerator {
     return json;
   }
 
-  * generatorMethod (obj) {
+  * generatorMethod(obj) {
     let propKeys = Reflect.ownKeys(obj);
 
     for (let propKey of propKeys) {
       yield {
         key: propKey,
         value: this.getUrl(obj[propKey])
-      }
+      };
     }
   }
 }

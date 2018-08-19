@@ -1,5 +1,5 @@
-const sorted = [...'RyLee'].sort().join("")
+const sorted = [...'RyLee'].sort().join('');
 
 console.log( // ==> LReey
-	sorted
-)
+    sorted
+);

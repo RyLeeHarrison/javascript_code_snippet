@@ -9,7 +9,7 @@ const emptyFunction = {
   thatReturnsTrue: makeEmptyFunction(true),
   thatReturnsNull: makeEmptyFunction(null),
   thatReturnsArgument: arg => arg,
-}
+};
 
 // export default
 module.exports = emptyFunction;

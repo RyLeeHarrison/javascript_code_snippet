@@ -7,9 +7,6 @@ const input = fs.createReadStream(filename);
 
 input.on('readable', () => {
   const data = input.read();
-  if (data)
-    hmac.update(data);
-  else {
-    console.log(`${hmac.digest('hex')} ${filename}`);
-  }
+  if (data) hmac.update(data);
+  else console.log(`${hmac.digest('hex')} ${filename}`);
 });

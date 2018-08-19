@@ -1,6 +1,6 @@
 class FourBitAdder {
   static not(a) {
-    return a == 1 ? 0 : 1;
+    return a === 1 ? 0 : 1;
   }
 
   static and(a, b) {
@@ -61,4 +61,4 @@ class FourBitAdder {
   }
 }
 
-console.log(FourBitAdder.fourBitAdder('0010', '0101'))
+console.log(FourBitAdder.fourBitAdder('0010', '0101'));

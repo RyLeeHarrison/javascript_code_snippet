@@ -3,6 +3,6 @@ const concatMap = (f, xs) => []
     .concat.apply(
         [],
         (Array.isArray(xs) ? (
-            xs
+          xs
         ) : xs.split('')).map(f)
     );

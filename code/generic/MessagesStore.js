@@ -1,4 +1,5 @@
-export default class Messages {
+//export default = 
+module.exports = class Messages {
   constructor() {
     this.messages = [];
   }
@@ -14,4 +15,4 @@ export default class Messages {
   getMessages() {
     return this.messages;
   }
-}
+};
