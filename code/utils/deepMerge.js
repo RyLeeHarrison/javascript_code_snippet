@@ -1,12 +1,10 @@
 const deepMerge = (...sources) => {
 	let returnValue = {};
-
 	for (const source of sources) {
 		if (Array.isArray(source)) {
 			if (!(Array.isArray(returnValue))) {
 				returnValue = [];
 			}
-
 			returnValue = [...returnValue, ...source];
 		} else if (isObject(source)) {
 			for (let [key, value] of Object.entries(source)) {
