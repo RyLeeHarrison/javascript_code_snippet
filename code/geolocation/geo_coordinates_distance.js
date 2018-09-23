@@ -1,3 +1,5 @@
+// Example: https://repl.it/@RyLeeHarrison1/distance-between-two-geo-coordinates
+
 const distance = (
   [lat1, lon1],
   [lat2, lon2],
@@ -22,12 +24,12 @@ const distance = (
     km: 1.609344,
     nm: 0.8684,
   };
-  
+
   return (
     Math.round((conversionTable[unit] * dist) * Math.pow(10, roundTo)) /
     Math.pow(10, roundTo)
   );
-}
+};
 
 const progressMade = (
   [dist1, dist2],
@@ -35,14 +37,14 @@ const progressMade = (
   roundTo = 2
 ) => (
   Math.round((100 *
-    (distance(current1, current2)-0) /
-    (distance(dist1, dist2)-0)) *
+    (distance(current1, current2) - 0) /
+    (distance(dist1, dist2) - 0)) *
     Math.pow(10, roundTo)) / Math.pow(10, roundTo)
 );
 
 const percent = progressMade(
-  [ [32.9697, -96.80322], [29.46786, -98.53506] ], // destination cords
-  [ [32.96, -96.80322],   [29.46786, -98.53506] ], // current cords
+    [ [32.9697, -96.80322], [29.46786, -98.53506] ], // destination cords
+    [ [32.96, -96.80322],   [29.46786, -98.53506] ], // current cords
 );
 
 console.log(`Total distance between cords: ${distance([32.9697, -96.80322], [29.46786, -98.53506], 'km', 2)} km`);
