@@ -1,6 +1,7 @@
 function getBrowserInfo() {
   const browser = {};
   const temp = navigator.userAgent.toUpperCase();
+
   if (temp.match(/RV:([\d.]+)\) LIKE GECKO/)) { // for IE 11
     browser.ie = temp.match(/RV:([\d.]+)\) LIKE GECKO/)[1];
   } else if (temp.match(/MSIE ([\d.]+)/)) { // for IE 10 or older
@@ -18,6 +19,7 @@ function getBrowserInfo() {
   } else if (temp.match(/VERSION\/([\d.]+).*SAFARI/)) { // for Safari
     browser.safari = temp.match(/VERSION\/([\d.]+).*SAFARI/)[1];
   }
+
   return browser;
 }
 
