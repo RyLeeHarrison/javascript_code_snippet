@@ -37,7 +37,7 @@ module.exports = {
             "setWithoutGet": false
         }],
         "brace-style": [2, "1tbs", {"allowSingleLine": true}],
-        "curly": [2, "multi-or-nest", "consistent"],
+        "curly": 2,
         "new-parens": 2,
         "func-call-spacing": 2,
         "arrow-parens": [2, "as-needed"],
