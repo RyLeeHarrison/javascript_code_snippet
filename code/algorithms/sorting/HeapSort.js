@@ -12,6 +12,7 @@ class HeapSort {
   sort() {
     this.put_array_in_heap_order();
     let end = this.arr.length - 1;
+
     while (end > 0) {
       this.swap(0, end);
       this.sift_element_down_heap(0, end);
@@ -25,6 +26,7 @@ class HeapSort {
     let i;
     i = this.arr.length / 2 - 1;
     i = Math.floor(i);
+
     while (i >= 0) {
       this.sift_element_down_heap(i, this.arr.length);
       i -= 1;
@@ -35,15 +37,24 @@ class HeapSort {
     let i_big;
     let c1;
     let c2;
+
     while (i < max) {
       i_big = i;
       c1 = 2 * i + 1;
       c2 = c1 + 1;
-      if (c1 < max && this.arr[c1] > this.arr[i_big])
+
+      if (c1 < max && this.arr[c1] > this.arr[i_big]) {
         i_big = c1;
-      if (c2 < max && this.arr[c2] > this.arr[i_big])
+      }
+      
+      if (c2 < max && this.arr[c2] > this.arr[i_big]) {
         i_big = c2;
-      if (i_big === i) return;
+      }
+      
+      if (i_big === i) {
+        return;
+      }
+      
       this.swap(i, i_big);
       i = i_big;
     }
@@ -51,14 +62,11 @@ class HeapSort {
 }
 
 
-function test({
-  numberOfValues,
-  min,
-  max
-}) {
+const test = ({numberOfValues, min, max}) => {
   const randomArray = (
-    [...new Array(numberOfValues)]
-        .map(() => Math.floor(Math.random() * (max - min)) + min)
+    [...new Array(numberOfValues)].map(() => 
+      Math.floor(Math.random() * (max - min)) + min
+    )
   );
 
   const Heep = new HeapSort(randomArray);
@@ -74,4 +82,5 @@ test({
   max: 1000
 });
 
+// export default HeapSort;
 // module.exports = HeapSort;

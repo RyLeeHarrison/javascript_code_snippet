@@ -7,8 +7,13 @@ const compare = (a, b) => a < b ? -1 : a > b ? 1 : 0;
 const over = key => on(compare, key);
 const overAndDec = key => on(flip(compare), key);
 
-const username       = ({ username })           => username;
-const favoriteNumber = ({ favorite_number })    => favorite_number;
+const username = ({
+  username
+}) => username;
+
+const favoriteNumber = ({
+  favorite_number
+}) => favorite_number;
 
 const sortedDefault = {
   default: spread(mock_user_data),
