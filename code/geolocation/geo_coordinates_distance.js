@@ -50,5 +50,5 @@ const percent = progressMade(
 // Total distance between cords: 422.74 km
 // 99.77% of the distance traveled to destination
 
-console.log(`Total distance between cords: ${distance([32.9697, -96.80322], [29.46786, -98.53506], 'km', 2)} km`);
+console.log(`Total distance between cords: ${distance([32.9697, -96.80322], [29.46786, -98.53506], 'km', 2)}km`);
 console.log(`${percent}% of the distance traveled to destination`);
